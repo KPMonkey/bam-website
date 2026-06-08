@@ -172,6 +172,23 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .services__cta p{font-size:1.05rem;margin-bottom:1rem;color:var(--gray-500)}
 
 /* ============================================================
+   PROMOS
+   ============================================================ */
+.promos{background:var(--gray-50)}
+.promos__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.promo-card{
+  border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-md);
+  transition:transform var(--ease),box-shadow var(--ease);
+}
+.promo-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.promo-card img{width:100%;height:auto;display:block}
+
+@media(max-width:768px){
+  .promos__grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+}
+
+/* ============================================================
    ABOUT
    ============================================================ */
 .about{background:var(--white)}
